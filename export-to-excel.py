@@ -1,6 +1,6 @@
-from config import PROCESSED_RDS_TABLE
+from config import EXCEL_READ_TABLE
 from rds.rds import read
 from excel.excel import write_excel
 
-sellings = read(PROCESSED_RDS_TABLE)
+sellings = read(EXCEL_READ_TABLE)
 write_excel(sellings)

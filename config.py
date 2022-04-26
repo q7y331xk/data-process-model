@@ -4,10 +4,11 @@ RDS_USER_NAME = 'admin'
 RDS_USER_PW = 'pLa5yfCbS^rCt^vh'
 RDS_DB = 'chocam'
 EXISTS_RDS_TABLE = 'processed_location_color'
-PROCESSED_RDS_TABLE = 'brand_model'
+PROCESSED_RDS_TABLE = 'brand_model1'
 
 # EXCEL
-EXCEL_SAVE_NAME = 'model'
+EXCEL_READ_TABLE = 'brand_model1'
+EXCEL_SAVE_NAME = 'model1'
 EXCEL_SAVE_PATH = f"/Users/duckyounglee/Documents/{EXCEL_SAVE_NAME}.xlsx"
 
 EXCEL_KEYWORDS_NAME = 'BD_analysis'
