@@ -1,5 +1,5 @@
 from rds.rds import write
-from search_func.match_title_main import match_title_main
+from search_func.match_str import match_keywords
 
 def process_datum(selling, models):
     default = '.'
@@ -12,7 +12,7 @@ def process_datum(selling, models):
             keywords = [model["model_name"]] + model["additional_keywords"]
         else:
             keywords = [model["model_name"]]
-        model_found = match_title_main(selling, keywords, default)
+        model_found = match_keywords(selling[1].replace(' ',''), keywords, default)
         if model_found != default:
             brand = model["brand"]
             model_name = model["model_name"]
