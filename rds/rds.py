@@ -42,6 +42,7 @@ def create_table_if_exists_drop(table):
     )")
     conn.commit()
 
+
 def write(table, selling):
     conn = conn_db()
     cursor = conn.cursor()
