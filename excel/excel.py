@@ -31,6 +31,14 @@ def write_excel(sellings):
     ws.cell(row = 1, column = 19, value = "color")
     ws.cell(row = 1, column = 20, value = "brand")
     ws.cell(row = 1, column = 21, value = "model")
+    ws.cell(row = 1, column = 22, value = "jangbak")
+    ws.cell(row = 1, column = 23, value = "grade")
+    ws.cell(row = 1, column = 24, value = "limited")
+    ws.cell(row = 1, column = 25, value = "groundsheet")
+    ws.cell(row = 1, column = 26, value = "inner_tent")
+    ws.cell(row = 1, column = 27, value = "urethane")
+    ws.cell(row = 1, column = 28, value = "vestibule")
+    ws.cell(row = 1, column = 29, value = "set")
     i = 0
     while (i < row_length):
         row = sellings[i]

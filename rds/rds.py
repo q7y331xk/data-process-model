@@ -38,7 +38,15 @@ def create_table_if_exists_drop(table):
         `gu` TEXT,\
         `color` TEXT,\
         `brand` TEXT,\
-        `model` TEXT\
+        `model` TEXT,\
+        `jangbak` TEXT,\
+        `grade` TEXT,\
+        `limited` TEXT,\
+        `groundsheet` TEXT,\
+        `inner_tent` TEXT,\
+        `urethane` TEXT,\
+        `vestibule` TEXT,\
+        `set` TEXT\
     )")
     conn.commit()
 
@@ -70,7 +78,15 @@ def write(table, sellings):
             \"{selling[17]}\",\
             \"{selling[18]}\",\
             \"{selling[19]}\",\
-            \"{selling[20]}\"\
+            \"{selling[20]}\",\
+            \"{selling[21]}\",\
+            \"{selling[22]}\",\
+            \"{selling[23]}\",\
+            \"{selling[24]}\",\
+            \"{selling[25]}\",\
+            \"{selling[26]}\",\
+            \"{selling[27]}\",\
+            \"{selling[28]}\"\
         )")
         print(f"{idx + 1}/{lows_cnt}")
     conn.commit()

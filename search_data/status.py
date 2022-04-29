@@ -1,0 +1,1 @@
+keywords_status = [{"key": "구합니다", "value": "구매"}]
