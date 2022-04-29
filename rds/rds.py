@@ -43,30 +43,34 @@ def create_table_if_exists_drop(table):
     conn.commit()
 
 
-def write(table, selling):
+def write(table, sellings):
     conn = conn_db()
     cursor = conn.cursor()
-    cursor.execute(f"INSERT INTO {table} VALUES(\
-        \"{selling[0]}\",\
-        \"{selling[1]}\",\
-        \"{selling[2]}\",\
-        \"{selling[3]}\",\
-        \"{selling[4]}\",\
-        \"{selling[5]}\",\
-        \"{selling[6]}\",\
-        \"{selling[7]}\",\
-        \"{selling[8]}\",\
-        \"{selling[9]}\",\
-        \"{selling[10]}\",\
-        \"{selling[11]}\",\
-        \"{selling[12]}\",\
-        \"{selling[13]}\",\
-        \"{selling[14]}\",\
-        \"{selling[15]}\",\
-        \"{selling[16]}\",\
-        \"{selling[17]}\",\
-        \"{selling[18]}\",\
-        \"{selling[19]}\",\
-        \"{selling[20]}\"\
-    )")
+    lows_cnt = len(sellings)
+    print(f"lows_cnt: {lows_cnt}")
+    for (idx, selling) in enumerate(sellings):
+        cursor.execute(f"INSERT INTO {table} VALUES(\
+            \"{selling[0]}\",\
+            \"{selling[1]}\",\
+            \"{selling[2]}\",\
+            \"{selling[3]}\",\
+            \"{selling[4]}\",\
+            \"{selling[5]}\",\
+            \"{selling[6]}\",\
+            \"{selling[7]}\",\
+            \"{selling[8]}\",\
+            \"{selling[9]}\",\
+            \"{selling[10]}\",\
+            \"{selling[11]}\",\
+            \"{selling[12]}\",\
+            \"{selling[13]}\",\
+            \"{selling[14]}\",\
+            \"{selling[15]}\",\
+            \"{selling[16]}\",\
+            \"{selling[17]}\",\
+            \"{selling[18]}\",\
+            \"{selling[19]}\",\
+            \"{selling[20]}\"\
+        )")
+        print(f"{idx + 1}/{lows_cnt}")
     conn.commit()

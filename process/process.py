@@ -22,12 +22,15 @@ def process_datum(selling_list, models):
 
     return processed_selling
 
-def process_data(table, sellings_exist, models, start_id):
+def process_data(sellings_exist, models, skip_id):
+    sellings_processed = []
+    lows_cnt = len(sellings_exist)
+    print(f"lows_cnt: {lows_cnt}")
     for selling in sellings_exist:
         selling_list = list(selling)
-        if (selling_list[0] <= start_id):
+        if (selling_list[0] <= skip_id):
             continue
         processed_selling = process_datum(selling_list, models)
-        print(processed_selling)
-        write(table, processed_selling)
-        print('done')
+        sellings_processed.append(processed_selling)
+        print(f"{selling[0]}/{lows_cnt}")
+    return sellings_processed
