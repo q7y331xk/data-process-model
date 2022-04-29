@@ -12,5 +12,5 @@ EXCEL_READ_TABLE = 'brand_model2'
 EXCEL_SAVE_NAME = 'model2'
 EXCEL_SAVE_PATH = f"/Users/duckyounglee/Documents/{EXCEL_SAVE_NAME}.xlsx"
 
-EXCEL_KEYWORDS_NAME = 'BD_analysis_add_keywords1'
+EXCEL_KEYWORDS_NAME = 'keywords'
 EXCEL_KEYWORDS_PATH = f"/Users/duckyounglee/Documents/{EXCEL_KEYWORDS_NAME}.xlsx"

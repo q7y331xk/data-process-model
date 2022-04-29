@@ -1,5 +1,5 @@
 from time import sleep
-from config import EXISTS_RDS_TABLE, PROCESSED_RDS_TABLE, RDS_SKIP_ID
+from config import EXCEL_KEYWORDS_PATH, EXISTS_RDS_TABLE, PROCESSED_RDS_TABLE, RDS_SKIP_ID
 from process.process import process_data
 from rds.rds import create_table_if_exists_drop, read, write
 from excel.excel import read_model
@@ -13,7 +13,7 @@ print("sleep(0)")
 print("==================================================")
 # sleep(5)
 print("1/5 read model from excel... ", end="")
-models = read_model()
+models = read_model(EXCEL_KEYWORDS_PATH)
 print("done")
 print("2/5 read sellings... ", end="")
 sellings_exist = read(EXISTS_RDS_TABLE)

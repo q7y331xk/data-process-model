@@ -45,10 +45,10 @@ def write_excel(sellings):
     wb.save(EXCEL_SAVE_PATH)
     print(f'write excel in "{EXCEL_SAVE_PATH}"')
 
-def read_model():
+def read_model(excel_keywords_path):
     models = []
-    wb = openpyxl.load_workbook(EXCEL_KEYWORDS_PATH)
-    ws = wb['키워드']
+    wb = openpyxl.load_workbook(excel_keywords_path)
+    ws = wb['model']
     rows = ws.rows
     for row in rows:
         brand = row[0].value
