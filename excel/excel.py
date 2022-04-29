@@ -29,6 +29,8 @@ def write_excel(sellings):
     ws.cell(row = 1, column = 17, value = "div")
     ws.cell(row = 1, column = 18, value = "gu")
     ws.cell(row = 1, column = 19, value = "color")
+    ws.cell(row = 1, column = 20, value = "brand")
+    ws.cell(row = 1, column = 21, value = "model")
     i = 0
     while (i < row_length):
         row = sellings[i]
