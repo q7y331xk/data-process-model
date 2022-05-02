@@ -5,7 +5,7 @@ RDS_USER_PW = 'pLa5yfCbS^rCt^vh'
 RDS_DB = 'chocam'
 EXISTS_RDS_TABLE = 'processed_location_color'
 PROCESSED_RDS_TABLE = 'brand_model2'
-RDS_SKIP_ID = 316000
+RDS_SKIP_ID = 0
 
 # EXCEL
 EXCEL_READ_TABLE = 'brand_model2'
